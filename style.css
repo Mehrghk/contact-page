@@ -1,0 +1,170 @@
+*{
+    font-family: "Be Vietnam Pro", sans-serif;
+
+}
+body{
+    background-image: url('bg-image.svg');
+    background-size: cover;
+}
+.head{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-style: normal;
+}
+h1, h3{
+    margin: 10px;
+    width: 50%;
+}
+h1{
+    font-size: 64px;
+}
+h3{
+    font-size: 32px;
+}
+.card{
+    margin-top: 50px;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    flex-direction: column;
+    align-items: center;
+}
+.card-body{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 60%;
+    /* height: 50vh; */
+    padding: 20px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: column;
+}
+.row{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+span{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+label{
+    font-size: 14px;
+    color: white;
+}
+input{
+    margin-top: 5px;
+    font-size: 16px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    height: 30px;
+    background-color: #F8FAFC;
+}
+::placeholder{
+    color: #CDD5E0;
+    font-weight: 600;
+}
+select{
+    margin-top: 5px;
+    font-size: 16px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    height: 52px;
+    font-weight: 600;
+    background-color: #F8FAFC;
+
+}
+select:focus-visible , input:focus-visible, textarea:focus-visible{
+    outline: #5824a5 solid 2px;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20.8px 30px 16px;
+}
+textarea{
+    margin-top: 5px;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 10px;
+    height: 200px;
+    text-align: justify;
+    resize: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+button{
+    margin-top: 5px;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #4036A9;
+    width: 100%;
+    margin: 0 20.8px 0px 16px;
+    background-color: #F8FAFC;
+}
+.butt{
+    margin-bottom: 10px;
+}
+button:hover{
+    background-color: #eaeef2;
+}
+button:focus{
+    outline: #5824a5 solid 2px;
+
+}
+
+@media (max-width : 1024px){
+    .card-body{
+        width: 80%;
+    }
+    h1 {
+        font-size: 48px;
+        width: auto;
+        max-width: 50%;
+    }
+    h3{
+        font-size: 24px;
+        width: auto;
+        max-width: 50%;
+    }
+}
+@media (max-width : 640px) {
+    h1 {
+        font-size: 48px;
+        max-width: 100%;
+    }
+    h3{
+        font-size: 24px;
+        max-width: 100%;
+    }
+    .row{
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    span{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .message{
+        margin: 0px 0px 30px;
+    }
+    button{
+        margin: 0px;
+    }
+    .butt{
+        margin-bottom: 10px;
+    }
+}
